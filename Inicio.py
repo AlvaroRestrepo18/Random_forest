@@ -93,12 +93,44 @@ st.markdown("*Responde de forma clara y completa. Puedes utilizar ejemplos para 
 with st.expander("🤔 Ver preguntas sobre Random Forest"):
     st.markdown("""
     1. **¿Qué es el algoritmo Random Forest y para qué se utiliza?**
+    
+       **Respuesta:** Random Forest (Bosque Aleatorio) es un algoritmo de aprendizaje automático supervisado que se utiliza para problemas de clasificación y regresión. Funciona creando múltiples árboles de decisión durante el entrenamiento y combinando sus predicciones para obtener resultados más precisos y robustos.
+
     2. **Explica cómo funciona Random Forest durante la fase de entrenamiento.**
+    
+       **Respuesta:** Durante el entrenamiento:
+       - Se crean múltiples subconjuntos de datos mediante **bootstrapping** (muestreo con reemplazo)
+       - Para cada subconjunto, se entrena un árbol de decisión
+       - En cada división del árbol, solo se considera un subconjunto aleatorio de características
+       - Los árboles crecen sin poda hasta su máxima profundidad
+
     3. **¿Por qué Random Forest se considera un algoritmo de ensamble?**
+    
+       **Respuesta:** Se considera un algoritmo de ensamble porque combina las predicciones de múltiples modelos débiles (árboles de decisión individuales) para formar un modelo más fuerte y robusto. Esta técnica se conoce como **bagging** (Bootstrap Aggregating).
+
     4. **¿Cuál es la diferencia principal entre un árbol de decisión y un Random Forest?**
+    
+       **Respuesta:** La principal diferencia es que un árbol de decisión es un modelo único que puede sufrir de sobreajuste (overfitting), mientras que Random Forest combina múltiples árboles, reduciendo el sobreajuste y mejorando la generalización mediante el principio de "la sabiduría de las multitudes".
+
     5. **¿Qué ventajas ofrece Random Forest frente a otros modelos de aprendizaje supervisado?**
+    
+       **Respuesta:** Ventajas principales:
+       - Menor sobreajuste que los árboles individuales
+       - Alta precisión en muchos problemas
+       - Maneja bien datos con missing values
+       - No requiere normalización de características
+       - Proporciona importancia de características
+       - Funciona bien con datasets grandes
+
     6. **Menciona dos aplicaciones reales en las que se podría usar Random Forest.**
+    
+       **Respuesta:** 
+       - **Diagnóstico médico**: Clasificación de enfermedades basada en síntomas y pruebas médicas
+       - **Detección de fraude**: Identificación de transacciones fraudulentas en tarjetas de crédito
+
     7. **¿Qué significa el término "bootstrap" en el contexto de Random Forest?**
+    
+       **Respuesta:** Bootstrap se refiere a la técnica de muestreo con reemplazo donde se crean múltiples subconjuntos del dataset original, permitiendo que algunas instancias aparezcan múltiples veces en un mismo subconjunto mientras otras pueden no aparecer.
     """)
 
 # Footer
